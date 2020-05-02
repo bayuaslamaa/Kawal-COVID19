@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom'
 
 import Home from './Home'
+import Indo from './Indonesia'
 
 export default function Header() {
     return (
@@ -26,7 +27,7 @@ export default function Header() {
                                         <Link className="nav-link" to="/">Home</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="/:country" className="nav-link" >Country</Link>
+                                        <Link to="/indonesia" className="nav-link" >Indonesia</Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link className="nav-link" to="/sembuh">Sembuh</Link>
@@ -53,8 +54,8 @@ export default function Header() {
                                 <Home />
                             </Route>
                             <Route path="/sembuh"><h1>Sembuh...</h1>
-                                <Route path="/:country" ></Route>
                             </Route>
+                            <Route path="/indonesia" ><Indo /></Route>
                         </Switch>
                     </Router>
                 </header>

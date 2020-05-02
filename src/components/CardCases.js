@@ -7,9 +7,16 @@ export default function CardCases(props) {
     return (
         <>
             <div className="card col-lg-4 col-sm-6 col-xs-12">
-                <div className="side">{attributes.Country_Region}</div>
+                <div className="side">
+                    <div className="card-title">{attributes.OBJECTID}</div>
+                    <div className="card-title">{attributes.Country_Region}</div>
+                </div>
                 <div className="side back"> <div className="card-body">
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p className="card-title">Active: {attributes.Active}
+                    </p>
+                    <p className="card-title">Confirmed: {attributes.Confirmed} </p>
+                    <p className="card-title">Recovered: {attributes.Recovered}</p>
+                    <p className="card-title">Death: {attributes.Deaths}</p>
                 </div>
                 </div>
             </div>

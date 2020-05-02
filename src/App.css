@@ -43,7 +43,11 @@
 }
 
 .navbar {
-  background-color: transparent;
+  background-color: transparent ;
+}
+
+.nav-item.nav-link{
+  color: black;
 }
 
 .top-nav-collapse {
@@ -63,11 +67,14 @@ header,
 height: 100%;
 }
 
+li.nav-item a.nav-link{
+  background-color: black;
+}
 
 /* card animated */
 .card-container {
   cursor: pointer;
-  height: 150px;
+  height: 200px;
   perspective: 600;
   position: relative;
 /*     width: 150px; */
@@ -89,11 +96,13 @@ height: 100%;
   position: absolute;
   overflow: hidden;
   width: 100%;
+  text-align: center;
+  background-color: blueviolet;
 }
 .card .back {
-  background: #eaeaed;
+  background: greenyellow;
   color: #0087cc;
-  line-height: 150px;
+  line-height: 30px;
   text-align: center;
   transform: rotateY(180deg);
 }

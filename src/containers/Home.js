@@ -6,7 +6,6 @@ import CardCases from '../components/CardCases'
 export default function Home() {
     const dispatch = useDispatch()
     const cases = useSelector(state => state.cases)
-    console.log(cases)
     useEffect(() => {
         dispatch(getCases())
     }, [dispatch])
